@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  rating: 1
+  breakfast: false
+  descriptions: MyText
+  price: 1.5
+  address: MyText
+
+two:
+  title: MyString
+  rating: 1
+  breakfast: false
+  descriptions: MyText
+  price: 1.5
+  address: MyText
