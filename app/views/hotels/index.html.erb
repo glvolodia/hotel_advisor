@@ -11,7 +11,18 @@
     <div class="col-sm-6 col-md-3">
       <div class="thumbnail">
         <%= link_to (image_tag hotel.image.url(:medium), class: 'image'), hotel %>
+        <div class="star-rating" data-score= <%= @avg_review %> ></div>
       </div>
     </div>
   <% end %>
 </div>
+
+<script>
+    $('.star-rating').raty({
+      path: '/assets/',
+      readOnly: true,
+      score: function() {
+            return $(this).attr('data-score');
+    }
+  });
+</script>
